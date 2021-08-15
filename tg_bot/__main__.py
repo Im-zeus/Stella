@@ -18,7 +18,7 @@ from tg_bot.modules.helper_funcs.chat_status import is_user_admin
 from tg_bot.modules.helper_funcs.misc import paginate_modules
 
 PM_START_TEXT = """
-Hey there[!](https://telegra.ph/file/af54fb4a62733a4856653.jpg) My name is Stella - I'm here to help you manage your groups! Hit /help to find out more about how to use me to my full potential.
+Hey {}, I am {}! [🤗](https://telegra.ph/file/af54fb4a62733a4856653.jpg) I'm here to help you manage your groups! Hit /help to find out more about how to use me to my full potential.
 
 Join my [support group](https://t.me/noobiezhub) to get information on all the latest updates.
 
@@ -140,11 +140,11 @@ def start(bot: Bot, update: Update, args: List[str]):
                 PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_ID),
 
                 parse_mode=ParseMode.MARKDOWN, reply_markup=InlineKeyboardMarkup(
-                    [[InlineKeyboardButton(text="🧚‍♀️Add me🧚‍♀️", url="t.me/{}?startgroup=true".format(bot.username)),  InlineKeyboardButton(text="🧚‍♀️Owner🧚‍♀️", url="https://t.me/itzmezeus")],     
-                     [InlineKeyboardButton(text="🧚‍♀️Support🧚‍♀️", url="https://t.me/noobiezhub"), InlineKeyboardButton(text="🧚‍♀️Channel🧚‍♀️", url="https://t.me/zabotz") ]]))
+                    [[InlineKeyboardButton(text="𝘈𝘥𝘥 𝘔𝘦", url="t.me/{}?startgroup=true".format(bot.username)),  InlineKeyboardButton(text="𝘖𝘸𝘯𝘦𝘳", url="https://t.me/itzmezeus")],     
+                     [InlineKeyboardButton(text="𝘚𝘶𝘱𝘱𝘰𝘳𝘵", url="https://t.me/noobiezhub"), InlineKeyboardButton(text="𝘜𝘱𝘥𝘢𝘵𝘦𝘴", url="https://t.me/itzMeZeus") ]]))
 
     else:
-        update.effective_message.reply_text("ചത്തിട്ടില്ലാ...")
+        update.effective_message.reply_text("ചത്തിട്ടില്ലാ...🤪")
 
 
 # for test purposes
