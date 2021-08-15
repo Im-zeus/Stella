@@ -18,14 +18,3 @@ Alternatively, [find me on telegram](https://t.me/ITzMeZeus)! (Keep all support 
 To deploy me on heroku, use below button:
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Im-zeus/Stella)
-
-## Starting the bot.
-
-Once you've setup your database and your configuration (see below) is complete, simply run:
-
-`python3 -m Stella`
-
-
-## Setting up the bot (Read this before trying to use!):
-Please make sure to use python3.6, as I cannot guarantee everything will work as expected on older python versions!
-This is because markdown parsing is done by iterating through a dict, which are ordered by default in 3.6.
