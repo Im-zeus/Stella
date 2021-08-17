@@ -9,9 +9,6 @@ from telegram.ext import Filters, MessageHandler, run_async
 from tg_bot import dispatcher
 from tg_bot.modules.users import get_user_id
 
-from tg_bot.modules.helper_funcs.alternate import send_message
-from tg_bot.modules.helper_funcs.readable_time import get_readable_time
-
 AFK_GROUP = 7
 AFK_REPLY_GROUP = 8
 
