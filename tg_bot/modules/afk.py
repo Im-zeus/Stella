@@ -8,7 +8,6 @@ from telegram.ext import Filters, MessageHandler, run_async
 
 from tg_bot import dispatcher
 from tg_bot.modules.sql.afk_redis import start_afk, end_afk, is_user_afk, afk_reason
-from tg_bot import REDIS
 from tg_bot.modules.users import get_user_id
 
 from tg_bot.modules.helper_funcs.alternate import send_message
